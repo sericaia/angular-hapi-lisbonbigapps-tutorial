@@ -1,0 +1,1 @@
+Small exmaple project using Hapi (back-end) and AngularJS (front-end) 
