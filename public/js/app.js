@@ -11,7 +11,7 @@ angular.module('lisbonBigApp', [
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/itinerary', {
-        templateUrl: 'partials/itinerary-list.html', 
+        templateUrl: 'partials/itinerary-one.html', 
 		controller: 'ItineraryCtrl'});
   $routeProvider.when('/itinerary/:itineraryId', {
         templateUrl: 'partials/itinerary-detail.html', 
