@@ -1,0 +1,14 @@
+<h3>Itinerary List - Manipulating structures</h3>
+
+Search: <input ng-model="query">
+<li ng-repeat="itinerary in itineraryList | filter:query">
+    {{itinerary.name}} <button ng-click="removeItinerary(itinerary)" type="button" class="btn btn-xs btn-success">Remove</button>
+</li>
+
+<br/>
+
+<h4>Add new Itinerary</h4>
+Itinerary Name: <input type="text" ng-model="name"><br>
+Kilometers: <input type="text" ng-model="kilometers"><br>
+
+<button ng-click="addItinerary()" type="button" class="btn btn-xs btn-success">Add</button>

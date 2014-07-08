@@ -1,0 +1,7 @@
+<h3>Itinerary List - Search</h3>
+
+Search: <input ng-model="query">
+<li ng-repeat="itinerary in itineraryList | filter:query">
+    {{itinerary.name}}
+</li>
+

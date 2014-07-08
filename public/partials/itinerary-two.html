@@ -1,0 +1,6 @@
+<h3>Itinerary List - Filters</h3>
+
+<!-- super incredible filters' -->
+<li ng-repeat="itinerary in itineraryList | orderBy:'kilometers'">
+    {{itinerary.name | uppercase}} : {{itinerary.kilometers}}	
+</li>

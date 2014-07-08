@@ -9,6 +9,15 @@ module.exports = function(server) {
 
     // Array of routes for Hapi
     var routeTable = [
+        
+        //route that retrieves itinerary list to front-end
+        {
+            method: 'GET',
+            path: '/getitinerarylist',
+            config: controller.base.getitinerarylist
+        },
+        
+        //hapi default routes...
         {
             method: 'GET',
             path: '/about',

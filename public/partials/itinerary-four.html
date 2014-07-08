@@ -1,0 +1,12 @@
+<h3>Itinerary List - Show & Hide</h3>
+
+<span ng-show="simulationActive">
+    <li ng-repeat="itinerary in itineraryList">
+        {{itinerary.name}}
+    </li>
+</span>
+
+<span ng-hide="simulationActive">Your simulation is inactive!</span>
+
+<br/>
+<button ng-click="toggleSimulation()" type="button" class="btn btn-xs btn-success">Toggle simulation</button>

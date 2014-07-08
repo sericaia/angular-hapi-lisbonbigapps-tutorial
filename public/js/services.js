@@ -2,8 +2,18 @@
 
 /* Services */
 
+var appServices = angular.module('lisbonBigApp.services', []);
 
-// Demonstrate how to register services
-// In this case it is a simple value service.
-angular.module('lisbonBigApp.services', []).
-  value('version', '0.1');
+//simple service with a function
+appServices.factory('ItineraryService', ['$http', function($http){
+	function getItineraryList(){
+		return $http({
+			method: 'GET', 
+			url: '/getitinerarylist'			
+		});
+	}
+	
+    return {
+		getItineraryList : getItineraryList
+	}
+}]);

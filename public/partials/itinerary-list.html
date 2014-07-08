@@ -1,24 +1,7 @@
-<h3>Itinerary List</h3>
+<h3>Itinerary List - Loop</h3>
 
 <!-- let's do a loop!' -->
 <li ng-repeat="itinerary in itineraryList">
 	{{itinerary}}
-</li>
-
-
-
-<h3>Itinerary List</h3>
-
-<!-- super incredible filters' -->
-<li ng-repeat="itinerary in itineraryList | orderBy:'kilometers'">
-    {{itinerary.name | uppercase}} : {{itinerary.kilometers}}
-	
-</li>
-
-<h3>Itinerary List</h3>
-
-Search: <input ng-model="query">
-<li ng-repeat="itinerary in itineraryList | filter:query">
-    {{itinerary.name}}
 </li>
 

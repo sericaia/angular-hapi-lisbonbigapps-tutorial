@@ -1,5 +1,19 @@
 // This is the base controller. Used for base routes, such as the default index/root path, 404 error pages, and others.
 module.exports = {
+    
+    getitinerarylist: {
+        handler: function(request, reply){
+          // Render the view with the custom greeting
+            reply([{"name":"Night in Lisbon", "kilometers":3},
+                  {"name":"City Center", "kilometers":5},
+                  {"name":"Castle", "kilometers":2}]);
+        },
+        app: {
+            name: 'getitinerarylist'
+        }
+    },
+    
+    //hapi defaults
     index: {
         handler: function(request, reply){
           // Render the view with the custom greeting
